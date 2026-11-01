@@ -18,80 +18,102 @@
 
 // questions for rounds
 var questions_rounds = [
-	'Name something that one can have for breakfast',
-	'Name an animal species that is kept as a pet',
-	'Name something that sticks to a wall'
-];
+    'When ordering a matcha tea, what one flavor is the best pairing?',
+    'Name an Ariana Grande song',
+    'In anime, what is a common protagonist hair color?',
+    'What is the best breed of dog to own?',
+]
 
 // answers to the questions for rounds
 // format: dimension 1 = round, dimension 2 = question, dimension 3 = [answer, points]
 var answers_rounds = [
-	[
-		['Cereals', 49],
-		['Coffee', 22],
-		['Bread', 15],
-		['Tea', 7],
-		['Hot chocolate', 4], 
-		['Fresh fruits', 3]
-	],[
-		['Dog', 50],
-		['Cat', 36],
-		['Gold Fish', 7],
-		['Parrot', 4],
-		['Guinea pig', 3]
-	],[
-		['Poster', 34],
-		['Sticker', 29],
-		['Bubble gum', 19],
-		['Hot glue', 10]
-	]
-];
+    [
+        ['Strawberry', 32],
+        ['Vanilla', 22],
+        ['Mango', 15],
+        ['Lavendar', 11],
+        ['Coconut', 8],
+        ['Peach', 6],
+        ['Brown Sugar', 4]
+    ], [
+        ['7 Rings', 28],
+        ['Thank U, Next', 22],
+        ['Problem', 15],
+        ['Positions', 12],
+        ['Bang Bang', 9],
+        ['Side to Side', 6],
+        ['34+35', 5]
+    ], [
+        ['Black', 27],
+        ['Blonde', 18],
+        ['Brown', 12],
+        ['Silver/Gray/White', 10],
+        ['Light Brown/Orange', 9],
+        ['Red', 8],
+        ['Blue', 6]
+    ], [
+        ['Golden Retriever', 33],
+        ['Border Collies', 25],
+        ['Great Danes', 17],
+        ['Samoyed', 13],
+        ['Labradors', 11],
+        ['German Shepherds', 9],
+        ['Australian Shepherds', 8]
+    ]
+]
 
 
 // multiplicator for the points gained in a round
 // format: indexed by round, value is multiplicator
-var multiplicator = [1, 1, 2, 3];
-		
+var multiplicator = [1, 2, 3, 3]
+
 
 // questions for finals
 var questions_finals = [
-	'Name a place where it\'s hot',
-	'Name a well known sight in New York',
-	'Name something that can be found in a pond',
-	'Name something that can be shattered'
-];
+    "Name something kids would be disappointed to get while trick-or-treating",
+    'Name something pumpkin flavored',
+    'Name a costume that children will never stop wearing for Halloween',
+    'Name a sound that would create a spooky atmosphere',
+    'Name something a vampire is supposed to be afraid of',
+]
 
 
 // answers to the questions for the finals	
 // format: dimension 1 = question, dimension 2 = answer, dimension 3 = [answer, points]
 // must have five questions
 var answers_finals = [
-	[
-		['Sahara', 35],
-		['Hawaii', 26],
-		['Bahamas', 10],
-		['Oven', 10],
-		['Sauna', 9]
-	],[
-		['Statue of Liberty', 30],
-		['Empire State Building', 31],
-		['Central Park', 26],
-		['Brooklyn Bridge', 9],
-		['Chinatown', 3]
-	],[
-		['Water Lily', 37],
-		['Carp', 24],
-		['Water pump', 19],
-		['Fountain', 12],
-		['Stones', 8],
-	],[
-		['Vase', 29],
-		['Glass', 28],
-		['Economy', 16],
-		['Building', 15],
-		['Myth', 12],
-	]
-];
+    [
+        ['Raisins', 36],
+        ['A toothbrush', 22],
+        ['Fruit', 17],
+        ['Coins', 14],
+        ['Licorice', 11],
+    ], [
+        ['Pie', 33],
+        ['Coffee/Latte', 24],
+        ['Bread', 18],
+        ['Cookies', 14],
+        ['Soup', 11]
+    ], [
+        ['Superhero', 34],
+        ['Princess', 23],
+        ['Witch', 17],
+        ['Pirate', 14],
+        ['Dinosaur', 12],
+    ], [
+        ['A scream', 36],
+        ['A wolf howling', 22],
+        ['A creaking door', 17],
+        ['Thunder', 14],
+        ['An evil laugh', 11],
+    ], [
+        ['Sunlight', 33],
+        ['Garlic', 24],
+        ['A wooden stake', 18],
+        ['A cross', 14],
+        ['Holy water', 11],
+    ]
+]
 
 
 // timer duration for first and second player in finals, given in seconds
